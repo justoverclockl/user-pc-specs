@@ -1,8 +1,10 @@
 {
     "name": "justoverclock/user-pc-specs",
-    "description": "Add Pc Specs fields to each user",
+    "description": "Add Pc Specs fields to each user showed in Post Footer",
     "keywords": [
-        "flarum"
+        "pc specs",
+        "users pc",
+        "hardware specs"
     ],
     "type": "flarum-extension",
     "license": "MIT",
@@ -24,35 +26,15 @@
             "Justoverclock\\UserPcSpecs\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Justoverclock\\UserPcSpecs\\Tests\\": "tests/"
-        }
-    },
     "extra": {
         "flarum-extension": {
             "title": "User Pc Specs",
-            "category": "",
+            "category": "features",
             "icon": {
-                "name": "",
-                "backgroundColor": "",
-                "color": ""
+                "name": "fas fa-tv",
+                "backgroundColor": "purple",
+                "color": "white"
             }
         }
-    },
-    "scripts": {
-        "test": [
-            "@test:unit",
-            "@test:integration"
-        ],
-        "test:unit": "phpunit -c tests/phpunit.unit.xml",
-        "test:integration": "phpunit -c tests/phpunit.integration.xml",
-        "test:setup": "@php tests/integration/setup.php"
-    },
-    "scripts-descriptions": {
-        "test": "Runs all tests.",
-        "test:unit": "Runs all unit tests.",
-        "test:integration": "Runs all integration tests.",
-        "test:setup": "Sets up a database for use with integration tests. Execute this only once."
     }
 }
