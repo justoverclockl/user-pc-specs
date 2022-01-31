@@ -20,6 +20,7 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
   });
   extend(CommentPost.prototype, 'footerItems', function (items) {
     const imgPath = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-user-pc-specs/';
+
     const user = this.attrs.post.user();
     if (!user) return;
     items.add(
