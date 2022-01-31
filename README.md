@@ -4,6 +4,11 @@
 
 A [Flarum](http://flarum.org) extension. Add Pc Specs fields to each user
 
+![caca](https://user-images.githubusercontent.com/79002016/151768841-b1bfe948-ace9-4eda-a231-91bb1959ebf1.png)
+
+![asd](https://user-images.githubusercontent.com/79002016/151768910-540a7600-2e03-4dff-83c1-e27216974c48.png)
+
+
 ## Installation
 
 Install with composer:
