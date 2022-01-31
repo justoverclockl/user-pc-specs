@@ -28,5 +28,5 @@ php flarum cache:clear
 ## Links
 
 - [Packagist](https://packagist.org/packages/justoverclock/user-pc-specs)
-- [GitHub](https://github.com/justoverclock/user-pc-specs)
-- [Discuss](https://discuss.flarum.org/d/PUT_DISCUSS_SLUG_HERE)
+- [GitHub](https://github.com/justoverclockl/user-pc-specs)
+
