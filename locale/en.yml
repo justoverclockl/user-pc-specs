@@ -1,7 +1,10 @@
 justoverclock-user-pc-specs:
-  # For more details on the format
-  # Checkout https://docs.flarum.org/extend/i18n.html#appendix-a-standard-key-format
-  admin:
-    my_cool_key: My Cool Key
-
   forum:
+    savePcSpecs: Save Pc Specs
+    so: "Operating System:"
+    cabinet: "Cabinet:"
+    storage: "Storage:"
+    gpu: "Gpu:"
+    ram: "Ram:"
+    motherboard: "Motherboard:"
+    cpu: "Cpu:"

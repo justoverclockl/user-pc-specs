@@ -19,6 +19,7 @@ class SavePcSpecsToDb
 
         resolve('log')->debug(json_encode($attributes));
 
+
         if (isset($attributes['cpu'])) {
             if (!$isSelf) {
                 $actor->assertPermission($canEdit);
