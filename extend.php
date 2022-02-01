@@ -28,7 +28,6 @@ return [
     new Extend\Locales(__DIR__.'/locale'),
 
     (new Extend\Event())
-        ->listen(Serializing::class, AddPcSpecsAttributes::class)
         ->listen(Saving::class, SavePcSpecsToDb::class),
 
     (new Extend\ApiSerializer(UserSerializer::class))
