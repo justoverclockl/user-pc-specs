@@ -25,6 +25,8 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
     if (!user) return;
     items.add(
       'pcSpecs',
+      <details>
+        <summary className="pc-specs-summary">{app.translator.trans('justoverclock-user-pc-specs.forum.pcSpecsOf')} {user.username()}</summary>
       <div className="pcSpecs-container">
         <div className="pc-specs" title={user.cpu()} id="cpu">
           <img className="pc-specs-img" src={imgPath + 'cpu.png'} alt={user.cpu()} />
@@ -55,6 +57,7 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
           {user.operating_system()}
         </div>
       </div>
+      </details>
     );
   });
   extend(CommentPost.prototype, 'oncreate', function () {

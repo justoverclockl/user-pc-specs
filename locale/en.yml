@@ -8,3 +8,4 @@ justoverclock-user-pc-specs:
     ram: "Ram:"
     motherboard: "Motherboard:"
     cpu: "Cpu:"
+    pcSpecsOf: "Pc specs of:"
