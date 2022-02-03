@@ -25,7 +25,7 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
     if (!user) return;
     items.add(
       'pcSpecs',
-      <details>
+      <details id="pc-details" >
         <summary className="pc-specs-summary">{app.translator.trans('justoverclock-user-pc-specs.forum.pcSpecsOf')} {user.username()}</summary>
       <div className="pcSpecs-container">
         <div className="pc-specs" title={user.cpu()} id="cpu">
