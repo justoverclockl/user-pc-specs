@@ -1,12 +1,12 @@
 justoverclock-user-pc-specs:
   forum:
-    savePcSpecs: Save Pc Specs
-    so: "Operating System:"
+    savePcSpecs: Save PC Specs
     cabinet: "Cabinet:"
-    storage: "Storage:"
-    gpu: "Gpu:"
-    ram: "Ram:"
     motherboard: "Motherboard:"
-    cpu: "Cpu:"
-    pcSpecsOf: "Pc specs of:"
-    specsSaved: Pc successfully saved!
+    storage: "Storage:"
+    gpu: "GPU:"
+    ram: "RAM:"
+    cpu: "CPU:"
+    so: "Operating System:"
+    pcSpecsOf: "PC specs of:"
+    specsSaved: PC successfully saved!
