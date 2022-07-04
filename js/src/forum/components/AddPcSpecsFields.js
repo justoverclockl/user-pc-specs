@@ -77,6 +77,6 @@ export default class AddPcSpecsFields extends Component {
         gpu: this.gpu(),
         operating_system: this.operating_system(),
       })
-      .then(() => app.alerts.show({type: 'success'}, app.translator.trans('justoverclock-user-pc-specs.forum.specsSaved')));
+      .then(() => app.alerts.show({ type: 'success' }, app.translator.trans('justoverclock-user-pc-specs.forum.specsSaved')));
   }
 }
