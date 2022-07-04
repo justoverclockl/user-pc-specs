@@ -22,7 +22,10 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
     const imgPath = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-user-pc-specs/';
 
     const user = this.attrs.post.user();
-    if (!user) return;
+    const notUpdatedYet =
+      !user.cpu() && !user.motherboard() && !user.ram() && !user.gpu() && !user.storage() && !user.cabinet() && !user.operating_system();
+
+    if (!user || notUpdatedYet) return;
     items.add(
       'pcSpecs',
       <details id="pc-details">
