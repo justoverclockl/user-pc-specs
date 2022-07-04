@@ -67,6 +67,11 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
   });
   extend(CommentPost.prototype, 'oncreate', function () {
     const user = this.attrs.post.user();
+    const notUpdatedYet =
+      !user.cpu() && !user.motherboard() && !user.ram() && !user.gpu() && !user.storage() && !user.cabinet() && !user.operating_system();
+
+    if (!user || notUpdatedYet) return;
+
     const cpuEl = document.getElementById('cpu');
     const ramEl = document.getElementById('ram');
     const moboEl = document.getElementById('motherboard');
