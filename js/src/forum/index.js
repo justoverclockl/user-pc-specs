@@ -25,38 +25,40 @@ app.initializers.add('justoverclock/user-pc-specs', () => {
     if (!user) return;
     items.add(
       'pcSpecs',
-      <details id="pc-details" >
-        <summary className="pc-specs-summary">{app.translator.trans('justoverclock-user-pc-specs.forum.pcSpecsOf')} {user.username()}</summary>
-      <div className="pcSpecs-container">
-        <div className="pc-specs" title={user.cpu()} id="cpu">
-          <img className="pc-specs-img" src={imgPath + 'cpu.png'} alt={user.cpu()} />
-          {user.cpu()}
+      <details id="pc-details">
+        <summary className="pc-specs-summary">
+          {app.translator.trans('justoverclock-user-pc-specs.forum.pcSpecsOf')} {user.username()}
+        </summary>
+        <div className="pcSpecs-container">
+          <div className="pc-specs" title={user.cpu()} id="cpu">
+            <img className="pc-specs-img" src={imgPath + 'cpu.png'} alt={user.cpu()} />
+            {user.cpu()}
+          </div>
+          <div className="pc-specs" title={user.ram()} id="ram">
+            <img className="pc-specs-img" src={imgPath + 'ram.png'} alt={user.ram()} />
+            {user.ram()}
+          </div>
+          <div className="pc-specs" title={user.motherboard()} id="motherboard">
+            <img className="pc-specs-img" src={imgPath + 'motherboard.png'} alt={user.motherboard()} />
+            {user.motherboard()}
+          </div>
+          <div className="pc-specs" title={user.gpu()} id="gpu">
+            <img className="pc-specs-img" src={imgPath + 'gpu.png'} alt={user.gpu()} />
+            {user.gpu()}
+          </div>
+          <div className="pc-specs" title={user.storage()} id="storage">
+            <img className="pc-specs-img" src={imgPath + 'hdd.png'} alt={user.storage()} />
+            {user.storage()}
+          </div>
+          <div className="pc-specs" title={user.cabinet()} id="cabinet">
+            <img className="pc-specs-img" src={imgPath + 'case.png'} alt={user.cabinet()} />
+            {user.cabinet()}
+          </div>
+          <div className="pc-specs" title={user.operating_system()} id="operating-system">
+            <img className="pc-specs-img" src={imgPath + 'windows.png'} alt={user.operating_system()} />
+            {user.operating_system()}
+          </div>
         </div>
-        <div className="pc-specs" title={user.ram()} id="ram">
-          <img className="pc-specs-img" src={imgPath + 'ram.png'} alt={user.ram()} />
-          {user.ram()}
-        </div>
-        <div className="pc-specs" title={user.motherboard()} id="motherboard">
-          <img className="pc-specs-img" src={imgPath + 'motherboard.png'} alt={user.motherboard()} />
-          {user.motherboard()}
-        </div>
-        <div className="pc-specs" title={user.gpu()} id="gpu">
-          <img className="pc-specs-img" src={imgPath + 'gpu.png'} alt={user.gpu()} />
-          {user.gpu()}
-        </div>
-        <div className="pc-specs" title={user.storage()} id="storage">
-          <img className="pc-specs-img" src={imgPath + 'hdd.png'} alt={user.storage()} />
-          {user.storage()}
-        </div>
-        <div className="pc-specs" title={user.cabinet()} id="cabinet">
-          <img className="pc-specs-img" src={imgPath + 'case.png'} alt={user.cabinet()} />
-          {user.cabinet()}
-        </div>
-        <div className="pc-specs" title={user.operating_system()} id="operating-system">
-          <img className="pc-specs-img" src={imgPath + 'windows.png'} alt={user.operating_system()} />
-          {user.operating_system()}
-        </div>
-      </div>
       </details>
     );
   });
